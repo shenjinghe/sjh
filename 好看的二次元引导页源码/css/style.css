@@ -1,0 +1,244 @@
+/*--------------------------------*/
+/*			作者：CIRKIS		  */
+/*--------------------------------*/
+
+body	{
+    background:url(../images/bg.png)fixed center center no-repeat;
+	padding:0px;
+	margin:0px;
+}
+#header {
+	width:100%;
+	height:160px;
+}
+.btn-top {
+	text-align:center;
+	width:330px;
+}
+
+ul { padding-left:0; margin:0; }
+
+li { list-style:none; }
+
+#nav {
+height:60px;
+background:rgba(255, 255, 255, 0.77);
+position:fixed;
+width:100%;
+}
+
+#nav ul {
+width:100%;
+height:60px;
+margin:0 auto;
+}
+
+#nav li {
+float:left;
+height:60px;
+}
+
+#nav a {
+float:left;
+position:relative;
+height:60px;
+overflow:hidden;
+font-size:14px;
+color:#Fff;
+text-decoration:none;
+cursor:pointer;
+}
+
+#nav strong {float:left;width:100px;}
+
+#nav span {
+float:left;
+padding:0 0px;
+height:60px;
+line-height:60px;
+background:rgba(142, 185, 222, 0.65);
+clear:both;
+width:100px;
+}
+
+#nav .active,#nav .current span {
+background:rgba(37, 183, 226, 0.48);
+color:#fff;
+border-bottom:5px solid #FFF;
+}
+
+#nav .current .active { color:#fff;}
+
+#nav-logo {
+	width:45px;
+	height:45px;
+	float:right;
+	background:#Fff;
+	margin-top:-52.5px;
+	margin-right:150px;
+	border-radius:200px;
+	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.42);
+	border:5px solid rgba(0, 0, 0, 0.42);
+}
+.T {
+	color:#fff;
+	line-height:50px;
+	font-size:30px;
+	width:100%;
+	height:100px;
+	margin:0px auto 10px;
+}
+
+.B {
+	width:80%;
+	height:3px;
+	background:#Fff;
+	margin:10px auto 0px;
+}
+
+#c-1 {
+	width:100%;
+	height:700px;
+	margin:0px auto 0px;
+	padding-top:100px;
+}
+
+#logo {
+	width:200px;
+	height:200px;
+	margin:0px auto 0px;
+	display:block;
+}
+
+img#top-logo {
+    width: 140px;
+    background-size: cover;
+    border-radius: 200px;
+    opacity: 1;
+	transition: all 1.0s;  
+	overflow: hidden;
+    box-shadow:0px 0px 30px #fff;
+}
+
+#top-logo:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#btns {
+	width:800px;
+	height:70px;
+	margin:5% auto 0px;
+	min-width:320px;
+	padding-left:40px;
+}
+
+#btn-1:hover {background: linear-gradient(to right,#0080e2,#00b6ee) }
+#btn-1 {
+	width:120px;
+	height:50px;
+	margin-left:0px;
+	margin-top:20px;
+	float:left;
+	color:#Fff;
+	font-size:20px;
+	border-radius:10px;
+	box-shadow:0px 3px 10px #00b6ee;
+	line-height:50px;
+	text-align:center;
+	background: linear-gradient(to right,#00b6ee,#0080e2);
+}
+#btn-2:hover {background: linear-gradient(to right,#0080e2,#00b6ee)}
+#btn-2 {
+	width:120px;
+	height:50px;
+margin-left:80px;
+	margin-top:20px;
+	float:left;
+	color:#Fff;
+	font-size:20px;
+	border-radius:10px;
+	box-shadow:0px 3px 10px #00b6ee;
+	line-height:50px;
+	text-align:center;
+	background: linear-gradient(to right,#00b6ee,#0080e2);
+}
+#btn-3:hover {background: linear-gradient(to right,#0080e2,#00b6ee)}
+#btn-3 {
+	width:120px;
+	height:50px;
+	margin-left:80px;
+	margin-top:20px;
+	float:left;
+	color:#Fff;
+	font-size:20px;
+	border-radius:10px;
+	box-shadow:0px 3px 10px #00b6ee;
+	line-height:50px;
+	text-align:center;
+	background: linear-gradient(to right,#00b6ee,#0080e2);
+}
+#btn-4:hover {background: linear-gradient(to right,#0080e2,#00b6ee)}
+#btn-4 {
+	width:120px;
+	height:50px;
+	margin-left:80px;
+	margin-top:20px;
+	float:left;
+	color:#Fff;
+	font-size:20px;
+	border-radius:10px;
+	box-shadow:0px 3px 10px #00b6ee;
+	line-height:50px;
+	text-align:center;
+	background: linear-gradient(to right,#00b6ee,#0080e2);
+}
+
+#c-2 {
+	position:fixed;
+	bottom:0px;
+	width:100%;
+}
+
+#BL {
+	width:80%;
+	height:300px;
+	background:rgba(66, 139, 202, 0.65);
+	border-radius:50px;
+	margin:0px auto 0px;
+	padding-top:15px;
+}
+
+.BJY  {
+	width:70%;
+	margin:0px auto 0px;
+	
+}
+
+.Bgm-t {
+	width:100%;
+	min-width:100px;
+}
+
+
+#footer {
+	width:100%;
+	height:100px;
+	margin:-235px auto 0px;
+	background:rgba(66, 139, 202, 0.8);
+	line-height:30px;
+	color:#fff;
+	text-align:center;
+	padding-top:30px;
+}
+
+background: linear-gradient(to right,#00b6ee,#0080e2);
+
+
+
+
+

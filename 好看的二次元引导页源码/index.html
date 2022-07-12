@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>个人引导页</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/fakeloader.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="dist/styles/Vidage.css" />
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link href="dist/mfb.css" rel="stylesheet">
+		<script> 
+			window.onload=function()
+			{
+				var oDiv=document.getElementById('nav');
+				var aStrong=oDiv.getElementsByTagName('strong');
+				var aA=oDiv.getElementsByTagName('a');
+				var iTarget=oDiv.getElementsByTagName('li')[0].offsetHeight;
+ 
+			for(var i=0; i<aStrong.length; i++)
+			{
+				aA[i].style.width=aStrong[i].style.width=aStrong[i].getElementsByTagName('span')[0].offsetWidth+'px';
+				aStrong[i].style.position='absolute';
+				aStrong[i].style.top=aStrong[i].style.left=0;
+		
+				aStrong[i].onmouseover=function()
+			{
+				startMove(this, -iTarget);
+			};
+				aStrong[i].onmouseout=function()
+			{
+				startMove(this, 0);
+			};
+			}
+			};
+ 
+			function startMove(obj,target)
+			{
+				clearInterval(obj.iTime);
+				obj.iTime=setInterval(function(){
+			if(obj.offsetTop==target)
+			{
+				clearInterval(obj.iTime);
+			}
+			else
+			{
+				var iSpeed=(target-obj.offsetTop)/4;
+				iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+				obj.style.top=obj.offsetTop+iSpeed+'px';
+			}
+			}, 30);
+			}
+		</script>
+    </head>
+    <body>
+<!--视频背景-->
+		<div class="Vidage">
+		<div class="Vidage__image"></div>
+        <video id="VidageVideo" class="Vidage__video" autoplay loop style="width:100%;">
+		<source src="http://www.dz2004.com/bzd.mp4" type="video/mp4">
+		</video>
+		</div>
+		<script src="dist/scripts/Vidage.min.js"></script>
+		<script>
+			new Vidage('#VidageVideo');
+		</script>
+<!--加载-->
+        <div class="fakeloader"></div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/fakeloader.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fakeloader").fakeLoader({
+                    timeToHide:1600,
+                    bgColor:"#0080E2",
+                    imagePath:"images/yc.jpg"
+                });
+            });
+        </script>
+<!--开始-->
+		<div id="header">
+<!--按钮-->
+			<div id="nav">
+				<div class="btn-top">
+					<ul>
+						<li class="current"><a href="/"><strong>
+							<span> 首页</span>
+							<span class="active">欢迎</span>
+						</strong></a></li>
+						<li><a href="https://www.oj.bashu.com.cn/pub"><strong>
+							<span>巴蜀oj</span>
+							<span class="active">欢迎</span>
+						</strong></a></li>
+						<li><a href="/"><strong>
+							<span>个人主页</span>
+							<span class="active">欢迎</span>
+						</strong></a></li>
+					</ul>
+				</div>
+			</div>
+		<div id="c-1">
+			<div id="logo">
+				<img  id="top-logo" src="images/top-logo.png"/>
+			</div>
+			<div id="btns">
+				<a href="/"><div id="btn-1">个人博客</div></a>
+				<a href="https://www.menghuany.cn/"><div id="btn-2">xx</div></a>
+				<a href="https://www.menghuany.cn/""><div id="btn-3">xx</div></a>
+				<a href="http://www.taobao.com/""><div id="btn-4">xx</div></a>
+			</div>
+		</div>
+		<div id="c-2">
+			<div id="BL">
+				<div class="BJY">
+	  							                <audio  class="Bgm-t" src="https://sharefs.ali.kugou.com/202202082206/b37de04e84ad1722cd83508c4f4adc42/KGTX/CLTX001/57b3287ee16495b7acf6d891004191b2.mp3"  loop="loop" controls="controls" >
+			您的浏览器不支持播放音乐
+			</audio>
+				</div>
+			</div>
+		<div id="footer">
+			<div class="T"><span>版权归属: sjhnb</span><div class="B"></div></div>
+		</div>
+		</div>
+    </body>
+</html>
+
+
+
